@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Information</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Raleway', sans-serif;
+            background: url('https://img.freepik.com/free-photo/blur-coffee-cafe-shop-restaurant-with-bokeh-background_1421-472.jpg?size=626&ext=jpg&ga=GA1.1.595284326.1699587350&semt=sph') center center/cover no-repeat fixed; /* Updated background image styles */
+            color: #171717; /* White text color for better contrast */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Full height of the viewport */
+        }
+
+        .container {
+            max-width: 600px;
+            background-color: rgba(255, 255, 255, 0.9); /* White background color with transparency */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.9); /* Increased box shadow for better visibility */
+            text-align: center;
+            transition: background-color 0.3s; /* Smooth transition for background color */
+        }
+
+        .container:hover {
+            background-color: rgb(238, 239, 174); /* Change background color on hover */
+        }
+
+        h1 {
+            color: #333; /* Dark text color for headings */
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .icon {
+            color: #0c0c0c; /* Blue color for icons */
+            margin-right: 10px;
+        }
+
+        p {
+            margin: 5px 0;
+        }
+
+        a {
+            color: #007bff; /* Blue color for links */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Contact Information</h1>
+
+        <div class="contact-info">
+            <p><i class="fas fa-map-marker-alt icon"></i> RL Saluable Alimento, Vadlamudi, Guntur.</p>
+            <p><i class="fas fa-phone icon"></i> +91 960574321</p>
+            <p><i class="fas fa-envelope icon"></i> RLSaluableAlimento.com</p>
+            <p><i class="fab fa-twitter icon"></i> <a href="https://twitter.com/example" target="_blank">twitter.com/RL Saluable Alimento</a></p>
+            <p><i class="fab fa-facebook-f icon"></i> <a href="https://facebook.com/example" target="_blank">facebook.com/RL Saluable Alimento</a></p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+/* Rest of your CSS code */
+  
+  .signup-form h1 {
+    margin-bottom: 20px;
+  }
+  
+  .signup-form form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .signup-form form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .signup-form form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Add transition for smooth hover effect */
+  }
+  
+  .signup-form form button:hover {
+    background-color: #2a6edb; /* Darker color when hovered */
+  }
+  
+  /* Rest of your CSS code */
+  /* Rest of your CSS code */
+
+/* Rest of your CSS code */
+
+.dialog {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.dialog p {
+    margin-bottom: 10px;
+}
+
+.dialog .continue-button {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s; /* Add transition for smooth hover effect */
+}
+
+.dialog .continue-button:hover {
+    background-color: #555; /* Darker color when hovered */
+}
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+ 
+}
+/* Rest of your CSS code */
+
+  
+  /* Rest of your CSS code */
+  
+  

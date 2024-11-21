@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Offers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Raleway', sans-serif;
+            background-color: #f8f8f8; /* Light background color */
+        }
+
+        .background-image {
+            background-image: linear-gradient(
+                    rgba(0, 0, 0, 0.4),
+                    rgba(0, 0, 0, 0.4)),
+                url('https://img.freepik.com/free-photo/frame-made-different-nuts-spices-dark-background-top-view_1057-36951.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box shadow */
+            transition: transform 0.3s ease-in-out; /* Smooth transition on hover */
+        }
+
+        .container:hover {
+            transform: scale(1.02); /* Scale up on hover */
+        }
+
+        .offer {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #444;
+            padding-bottom: 20px;
+        }
+
+        .offer h2 {
+            color: #ffc107; /* Yellow color for offer titles */
+            margin-bottom: 10px;
+            transition: color 0.3s; /* Smooth transition on hover */
+        }
+
+        .offer p {
+            color: #ddd; /* Light gray color for offer details */
+            transition: color 0.3s; /* Smooth transition on hover */
+        }
+
+        .icon {
+            color: #ffc107; /* Yellow color for icons */
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body class="background-image">
+    <div class="container">
+        <h1 style="color: #ffc107;">Special Offers</h1>
+
+        <div class="offer">
+            <h2><i class="fas fa-gift icon"></i> Free Dessert</h2>
+            <p>Get a free dessert with any main course. Valid from 12/01/2023 to 12/31/2023.</p>
+        </div>
+
+        <div class="offer">
+            <h2><i class="fas fa-percent icon"></i> 50% Off</h2>
+            <p>50% off on selected appetizers. Available every Tuesday and Thursday.</p>
+        </div>
+
+        <div class="offer">
+            <h2><i class="fas fa-cocktail icon"></i> Happy Hour</h2>
+            <p>Buy one get one free on all cocktails. Monday to Friday, 5 PM - 7 PM.</p>
+        </div>
+    </div>
+</body>
+
+</html>

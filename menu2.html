@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,900;1,400;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Playfair Display', serif;
+        }
+
+        body {
+            background: url(https://img.freepik.com/free-photo/top-view-sketchbook-cottage-cheese-with-fresh-ripe-yellow-red-cherries-arranged-around-grey_141793-12013.jpg?size=626&ext=jpg&ga=GA1.1.595284326.1699587350&semt=ais);
+            background-size: cover;
+            background-position: right;
+            background-attachment: fixed;
+        }
+
+        #header {
+            margin: 20px;
+            position: relative;
+        }
+
+        #header>h1 {
+            text-align: center;
+            font-size: 3rem;
+        }
+
+        #header>p {
+            text-align: center;
+            font-size: 1.5rem;
+            font-style: italic;
+        }
+
+        #home-link {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+            background: blue;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .container {
+            width: 100vw;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 40px 20px;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+            margin-bottom: 60px;
+        }
+
+        .card>div {
+            box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.5);
+        }
+
+        .card-image {
+            width: 400px;
+            height: 250px;
+        }
+
+        .card-image>img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: bottom;
+        }
+
+        .card-text {
+            margin: -30px auto;
+            margin-bottom: -50px;
+            height: 300px;
+            width: 300px;
+            background-color: #1D1C20;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .card-meal-type {
+            font-style: italic;
+        }
+
+        .card-title {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            margin-top: 5px;
+        }
+
+        .card-body {
+            font-size: 1.25rem;
+        }
+
+        .card-price {
+            width: 100px;
+            height: 100px;
+            background-color: #970C0A;
+            color: #fff;
+            margin-left: auto;
+            font-size: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .order-button {
+            background: blue;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            display: inline-block;
+            border-radius: 5px;
+            margin-top: 10px;
+            text-align: center;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <h1>RL Saluable Alimento</h1>
+        <p>healthy with a good taste</p>
+        <a href="Homepage.php" id="home-link">Home</a>
+    </div>
+    <div class="container">
+        <div class="card">
+            <div class="card-image">
+                <img
+                    src="https://img.freepik.com/free-photo/gourmet-chicken-biryani-with-steamed-basmati-rice-generated-by-ai_188544-13480.jpg?t=st=1699858203~exp=1699861803~hmac=893ab1e69d582a6d85311fccfc24c7cfe1edfa231f21bdbc8bcd457439641165&w=1380">
+            </div>
+            <div class="card-text">
+                <p class="card-meal-type">Chicken Biriyani</p>
+                <h2 class="card-title">Biriyani is Lub..</h2>
+                <p class="card-body">Biriyani with the history of mughals and Indian spices!!</p>
+                <a href="order.php" class="order-button">Order now</a>
+            </div>
+            <div class="card-price">$56</div>
+        </div>
+        <div class="card">
+            <div class="card-image">
+                <img
+                    src="https://img.freepik.com/free-photo/fresh-vegetarian-risotto-with-peppers-parsley-generated-by-ai_188544-22120.jpg?t=st=1699859855~exp=1699863455~hmac=c3ee4e3a27ebb357a60af790c94b33cac887c100ff7af2b614fd264cf847365b&w=1380">
+            </div>
+            <div class="card-text">
+                <p class="card-meal-type">VEG PULAO</p>
+                <h2 class="card-title">A flavourful story.</h2>
+                <p class="card-body">Spice up your day with a bowl of aromatic veg pulao!!</p>
+                <a href="order.php" class="order-button">Order Now</a>
+            </div>
+            <div class="card-price">$39</div>
+        </div>
+        <div class="card">
+            <div class="card-image">
+                <img
+                    src="https://img.freepik.com/free-photo/plate-food-with-rice-chicken-with-sauce_188544-15091.jpg?t=st=1699860325~exp=1699863925~hmac=298382513c076a7426a24b34c15830f4c035f188fd111c41ba8d847eff5e7613&w=1380">
+            </div>
+            <div class="card-text">
+                <p class="card-meal-type">Fish Curry</p>
+                <h2 class="card-title">A Culinary Voyage</h2>
+                <p class="card-body">Tales from the Tides: A Culinary Expedition into Fish Cuisine..</p>
+                <a href="order.php" class="order-button">Order Now</a>
+            </div>
+            <div class="card-price">$69</div>
+        </div>
+        <div class="card">
+            <div class="card-image">
+                <img
+                    src="https://img.freepik.com/free-photo/healthy-lunch-meal-with-cooked-beef-curry-generated-by-ai_188544-38833.jpg?t=st=1699860627~exp=1699864227~hmac=a7d74703c737c0b055402368993ec7586b237a86146b65e3bcff04f06553aa88&w=1380">
+            </div>
+            <div class="card-text">
+                <p class="card-meal-type">VEG/NONVEG-THALI</p>
+                <h2 class="card-title">A Culinary Adventure!!</h2>
+                <p class="card-body">Thali Treasures: Discovering the Richness IndianCuisines!!</p>
+                <a href="order.php" class="order-button">Order Now</a>
+            </div>
+            <div class="card-price">$104</div>
+        </div>
+    </div>
+</body>
+
+</html>

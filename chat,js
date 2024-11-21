@@ -1,0 +1,31 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const chatMessages = document.querySelector(".chat-messages");
+    const messageInput = document.getElementById("message-input");
+    const sendButton = document.getElementById("send-button");
+
+    function addReceivedMessage(message) {
+        const receivedMessage = document.createElement("div");
+        receivedMessage.classList.add("message", "received");
+        receivedMessage.innerHTML = `<p>${message}</p>`;
+        chatMessages.appendChild(receivedMessage);
+    }
+
+    function addSentMessage(message) {
+        const sentMessage = document.createElement("div");
+        sentMessage.classList.add("message", "sent");
+        sentMessage.innerHTML = `<p>${message}</p>`;
+        chatMessages.appendChild(sentMessage);
+    }
+
+    sendButton.addEventListener("click", function () {
+        const message = messageInput.value.trim();
+        if (message !== "") {
+            addSentMessage(message);
+            messageInput.value = "";
+            // Simulate receiving a response after a delay
+            setTimeout(function () {
+                addReceivedMessage("Thanks for your message!");
+            }, 1000);
+        }
+    });
+});
